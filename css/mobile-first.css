@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+@font-face {
+    font-family: urbanist-extralight;
+    src: url(../fonts/urbanist-extralight.ttf);
+}
+
+body {
+    font-family: urbanist-extralight;
+}
+
+/* ==================HEADER================== */
+
+.header {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 1em;
+}
+
+.contenedor-header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo {
+    display: block;
+    width: 100px;
+}
+
+.header-search {
+    display: none;
+}
+
+.nav-list-item {
+    font-size: 1.2rem;
+    padding: 0.3em;
+    text-align: center;
+}
+
+
+
+@media (min-width: 600px) and (max-width:1200px) {
+
+    .img-logo {
+        display: block;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: minmax(80px,5vh) 60px;
+    }
+
+    .contenedor-header-title {
+        display: flex;
+    }
+
+    .contenedor-only-header-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-title {
+        text-align: left;
+    }
+
+    .header-search {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .nav {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+
+} 
+
+@media (min-width: 1201px) {
+    
+    .img-logo {
+        display: block;
+        width: 100px;
+    }
+
+.contenedor-header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-search {
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+}
+
+/* =========================ABOUT US============================ */
+
+.about-us{
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+.about-us-title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0.2em;
+}
+
+.article-figure {
+    font-size: 1.2rem;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-figure-img {
+    width: 100%;
+}
+
+/* ------------CARDS ARTICLE ABOUTE US--------------------------- */
+
+.card-icon {
+    background-color: cadetblue;
+    border-radius: 50px;
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.article-cards {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    padding: 1em;
+}
+
+@media (min-width: 600px) {
+
+    .article-1-about-us {
+        display: grid;
+        grid-template-columns: 3fr 2fr ;
+    }
+
+    .contenedor-cards {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .article-figure {
+        grid-row: span 2;
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ================SECCIÓN GALERIA================== */
+
+.galeria {
+    font-size: 1rem;
+    padding: 0.5em 0.5em;
+}
+
+.galeria-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0.25em;
+}
+
+.contenedor-galeria img {
+    height: 350px;
+    width: 100%;
+}
+
+.figure-caption {
+    font-size: 0.8rem;
+    padding: 0.25rem;
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+.contenedor-galeria {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.contenedor-galeria img {
+    object-fit: cover;
+}
+
+@media (min-width: 600px) {
+
+    .contenedor-galeria {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4, minmax(350px,20vh));
+    }
+
+    .contenedor-galeria img {
+        width: 100%;
+        height: 95%;
+        object-fit: cover;
+    }
+
+    .figure-img-destacada {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .contenedor-galeria {
+        grid-template-columns: 2fr repeat(2,1fr);
+        grid-template-rows: repeat(2, minmax(300px,20vh));
+    }
+
+    .figure-img-destacada {
+        grid-column: span 1;
+    }
+
+    .article-1-about-us {
+        font-size:1.5rem ;
+    }
+
+}
+

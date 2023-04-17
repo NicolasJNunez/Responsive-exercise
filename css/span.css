@@ -1,0 +1,16 @@
+.grilla-noticias {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: minmax(400px, 40vh) minmax(400px, 40vh);
+    gap: 20px;
+}
+
+.noticia-destacada {
+    grid-row: span 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+}

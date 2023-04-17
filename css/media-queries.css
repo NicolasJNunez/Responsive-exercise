@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.caja {
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    border: 2px solid black;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 100px;
+}
+
+@media (min-width: 768px) {
+    .caja {
+        width: 500px;
+        height: 500px;
+        background-color: blue;
+    }
+}
