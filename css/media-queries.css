@@ -17,7 +17,8 @@ body {
     width: 200px;
     background-color: brown;
     border: 2px solid black;
-    font-size: 2rem;
+    color: white;
+    font-size: 20px;
     text-align: center;
     line-height: 100px;
 }
@@ -28,4 +29,8 @@ body {
         height: 500px;
         background-color: blue;
     }
+}
+
+.caja-titulo {
+  font-size: 1em;
 }
